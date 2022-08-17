@@ -6,12 +6,12 @@ pipeline{
    }
   stages{
 
-    stage("build"){
-      steps{
-           echo 'building the application'
-           sh 'mvn clean package'
-      }
-    }
+        stage("build"){
+          steps{
+               echo 'building the application'
+               sh 'mvn clean package'
+          }
+        }
 
       stage("test"){
           steps{
